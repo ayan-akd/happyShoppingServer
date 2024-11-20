@@ -9,6 +9,6 @@ var router = express.Router();
 router.get("/users/:id", getSingleUser);
 router.get("/users", getUsers);
 router.post("/users", createUser);
-router.put("/users", verifyToken, updateUser);
+router.put("/users", updateUser);
 
 module.exports = router;
