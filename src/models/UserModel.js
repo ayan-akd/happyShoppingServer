@@ -14,13 +14,13 @@ const userSchema = new Schema({
     type: String,
   },
   zip: {
-    type: String,
+    type: Number,
   },
   street: {
     type: String,
   },
   cardNumber: {
-    type: String,
+    type: Number,
   },
   city: {
     type: String,
