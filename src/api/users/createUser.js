@@ -2,7 +2,7 @@ const UserModel = require("../../models/UserModel");
 
 const createUser = async (req, res, next) => {
   try {
-    const email = req.query.email;
+    // const email = req.query.email;
     // if (req.user.email !== email) {
     //   return res.status(403).send({ message: "Forbidden Access" });
     // }

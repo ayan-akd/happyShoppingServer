@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const userSchema = new Schema({
   name: {
-    type: String,
+    type: Object,
   },
   email: {
     type: String,
@@ -10,6 +10,22 @@ const userSchema = new Schema({
   role: {
     type: String,
   },
+  state: {
+    type: String,
+  },
+  zip: {
+    type: String,
+  },
+  street: {
+    type: String,
+  },
+  cardNumber: {
+    type: String,
+  },
+  city: {
+    type: String,
+  },
+
 });
 
 const UserModel = model("User", userSchema);
