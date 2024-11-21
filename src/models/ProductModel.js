@@ -11,6 +11,7 @@ const productSchema = new Schema({
   },
   rating: {
     type: Number,
+    required: false,
   },
   photo: {
     type: String,
@@ -34,6 +35,7 @@ const productSchema = new Schema({
   },
   type: {
     type: String,
+    required: false,
   },
 });
 

@@ -3,8 +3,8 @@ const ProductModel = require("../../models/ProductModel");
 const deleteProduct = async (req, res, next) => {
   try {
     const id = req.params.id;
-    const result = ProductModel.deleteOne({ _id: id });
-    res.status(201).send(result);
+    const result = await ProductModel.findOneAndDelete({ _id: id });
+    res.status(200).send(result);
   } catch (err) {
     next(err);
   }

@@ -1,4 +1,3 @@
-const { isValidObjectId } = require("mongoose");
 const ProductModel = require("../../models/ProductModel");
 
 const getSingleProduct = async (req, res, next) => {

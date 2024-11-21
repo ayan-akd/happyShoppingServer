@@ -8,12 +8,14 @@ const port = process.env.PORT || 5000;
 const usersRoutes = require("./routes/users");
 const productsRoutes = require("./routes/products");
 const othersRoutes = require("./routes/filteredData");
+const reviewsRoutes = require("./routes/reviews");
 
 applyMiddleware(app);
 
 app.use(usersRoutes);
 app.use(productsRoutes);
 app.use(othersRoutes);
+app.use(reviewsRoutes);
 
 app.get("/", (req, res) => {
   res.send("Service Server Is Running");
