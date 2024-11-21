@@ -2,11 +2,13 @@ const UserModel = require("../../models/UserModel");
 
 const updateUser = async (req, res, next) => {
   try {
-    const userEmail = req.query.userEmail;
-    const user = req.body;
-    const result = await UserModel.updateOne(
+    const userEmail = req.query.email;
+    const updatedUser = req.body;
+
+    const result = await UserModel.findOneAndUpdate(
       { email: userEmail },
-      { role: user.role }
+      updatedUser,
+      { new: true }
     );
     res.status(201).send(result);
   } catch (err) {
