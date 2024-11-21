@@ -10,14 +10,14 @@ const productSchema = new Schema({
     required: true,
   },
   rating: {
-    type: String,
+    type: Number,
   },
   photo: {
     type: String,
     required: true,
   },
   price: {
-    type: String,
+    type: Number,
     required: true,
   },
   department: {
@@ -26,6 +26,10 @@ const productSchema = new Schema({
   },
   availability: {
     type: Number,
+    required: true,
+  },
+  brand: {
+    type: String,
     required: true,
   },
   type: {
