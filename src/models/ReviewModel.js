@@ -5,7 +5,7 @@ const reviewSchema = new Schema({
     type: String,
     required: false,
   },
-  comment: {
+  review: {
     type: String,
     required: true,
   },
@@ -26,6 +26,10 @@ const reviewSchema = new Schema({
     max: 5,
   },
   userName: {
+    type: String,
+    required: true,
+  },
+  email: {
     type: String,
     required: true,
   },
