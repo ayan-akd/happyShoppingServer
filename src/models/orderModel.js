@@ -15,6 +15,12 @@ const orderSchema = new Schema(
           type: Number,
           default: 1,
         },
+        price: {
+          type: Number,
+        },
+        productName: {
+          type: String,
+        },
       },
     ],
     state: {
@@ -39,6 +45,10 @@ const orderSchema = new Schema(
     },
     total: {
       type: Number,
+      required: true,
+    },
+    transactionId: {
+      type: String,
       required: true,
     },
   },
