@@ -1,5 +1,4 @@
 var express = require("express");
-const verifyToken = require("../../middlewares/verifyToken");
 const getSingleProduct = require("../../api/products/getSingleProduct");
 const getProducts = require("../../api/products/getProducts");
 const createProduct = require("../../api/products/createProduct");

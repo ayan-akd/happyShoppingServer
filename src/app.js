@@ -10,6 +10,7 @@ const productsRoutes = require("./routes/products");
 const othersRoutes = require("./routes/filteredData");
 const reviewsRoutes = require("./routes/reviews");
 const paymentRoutes = require("./routes/payment");
+const orderRoutes = require("./routes/orders");
 
 applyMiddleware(app);
 
@@ -18,6 +19,7 @@ app.use(productsRoutes);
 app.use(othersRoutes);
 app.use(reviewsRoutes);
 app.use(paymentRoutes);
+app.use(orderRoutes);
 
 app.get("/", (req, res) => {
   res.send("Service Server Is Running");
